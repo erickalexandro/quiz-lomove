@@ -13,6 +13,9 @@ import { Toaster } from "@/components/ui/sonner";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import antesDepoisAsset from "@/assets/antesxdepois.webp";
+import mecanismoAsset from "@/assets/mecanismo.webp";
+import drEliasAsset from "@/assets/dr-elias.jpg";
 
 function NotFoundComponent() {
   return (
@@ -109,9 +112,9 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
         {/* Preload critical quiz assets */}
-        <link rel="prefetch" href="/src/assets/antesxdepois.webp" />
-        <link rel="prefetch" href="/src/assets/mecanismo.webp" />
-        <link rel="prefetch" href="/src/assets/dr-elias.jpg" />
+        <link rel="prefetch" href={antesDepoisAsset.url} />
+        <link rel="prefetch" href={mecanismoAsset.url} />
+        <link rel="prefetch" href={drEliasAsset.url} />
       </head>
       <body>
         {children}

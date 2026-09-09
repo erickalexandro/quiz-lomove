@@ -7,6 +7,7 @@ import quadrilAsset from "@/assets/quiz/regiao/quadril.webp";
 import herniaAsset from "@/assets/quiz/regiao/hernia.webp";
 import outrasAsset from "@/assets/quiz/regiao/outras.webp";
 import mecanismo2Asset from "@/assets/mecanismo-2.webp";
+import mecanismoAsset from "@/assets/mecanismo.webp";
 
 /**
  * As 22 etapas do quiz Lomove, na ordem exata do documento de especificação.
@@ -305,7 +306,7 @@ export const STEPS: readonly Step[] = [
     id: "compromisso",
     block: 3,
     kind: "single",
-    image: "/src/assets/mecanismo.webp",
+    image: mecanismoAsset.url,
     question:
       "Você estaria disposto a dedicar 10 minutos por dia para desencurtar e fortalecer o músculo que está causando sua dor?",
     options: [
